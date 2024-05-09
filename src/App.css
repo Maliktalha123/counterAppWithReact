@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.heading {
+  margin-top: 50px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(15, 15, 79);
+  background-color: #ecf0f3;
+}
+.buttonDiv {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: rgb(129, 77, 77);
+  color: #fff;
+}
+
+
+@media screen and (max-width:340px) {
+ .buttonDiv {
+flex-direction: column;
+  }
+}
